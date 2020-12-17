@@ -1,43 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pukul Tikus Tanah</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gambar/drum.png">
 </head>
-
 <body>
-  <h1>Pukul Tikus Tanah</h1>
+    <header>
+        <h2>DRUM VIRTUAL</h2>
+    </header>
+    <button id='open' >KeyMap</button>
+    <div class="modal__keymap">
+        <div class="modal countainer">
+          <div class="size">
+              <span>Press Q</span>  
+            <img src="./gambar/crash.png" alt="Crash">
+          </div>
+          <div class="size">
+            <span>Press W</span>
+            <img src="./gambar/ride.png" alt="ride.png">  
+          </div>
+          <div class="size">
+              <span>Press E</span>
+            <img src="./gambar/hhc.png" alt="hihat">  
+          </div>
+          <div class="size">
+              <span>Press A</span>
+            <img src="./gambar/hho.png" alt="Crash">  
+          </div>
+          <div class="size">
+              <span>Press S</span>
+            <img src="./gambar/rim.png" alt="Crash">  
+          </div>
+          <div class="size">
+              <span>Press D</span>
+            <img src="./gambar/sd.png" alt="Crash">  
+          </div>
+          <div class="size">
+              <span>Press Z</span>
+            <img src="./gambar/tomh.png" alt="Crash">  
+          </div>
+          <div class="size">
+              <span>Press X</span>
+            <img src="./gambar/bd.png" alt="Crash">  
+          </div>
+          <div class="size">
+              <span>Press C</span>
+            <img src="./gambar/tomm.png" alt="Crash">  
+          </div>
+          <button id="close">Oke</button>
+        </div>
+    </div>
+    <div class="countainer">
+        <div data-key= "81" class="key">
+            <img src="./gambar/crash.png" alt="Crash">
+        </div>
+        <div data-key= "87" class="key">
+            <img src="./gambar/ride.png" alt="Crash">
+        </div>
+        <div data-key= "69" class="key">
+            <img src="./gambar/hhc.png" alt="Crash">
+        </div>
+        <div data-key= "65" class="key">
+            <img src="./gambar/hho.png" alt="Crash">
+        </div>
+        <div data-key= "83" class="key">
+            <img src="./gambar/rim.png" alt="Crash">
+        </div>
+        <div data-key= "68" class="key">
+            <img src="./gambar/sd.png" alt="Crash">
+        </div>
+        <div data-key= "90" class="key">
+            <img src="./gambar/tomh.png" alt="Crash">
+        </div>
+        <div data-key= "88" class="key">
+            <img src="./gambar/bd.png" alt="Crash">
+        </div>
+        <div data-key= "67" class="key">
+            <img src="./gambar/tomm.png" alt="Crash">
+        </div>
+        
+    </div>
 
-  <button type="button" class="mulai" onclick="mulai()">Mulai!</button>
-
-  <h2 class="papan-skor">0</h2>
-
-  <div class="container">
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-    <div class="tanah">
-      <div class="tikus"></div>
-    </div>
-  </div>
-
-  <audio src="audio/Pop.mp3" id="pop"></audio>
-  <script src="js/script.js"></script>
+    <audio data-key="81" src="sounds/crash.wav"></audio>
+    <audio data-key="87" src="sounds/ride.wav"></audio>
+    <audio data-key="69" src="sounds/hihat.wav"></audio>
+    <audio data-key="65" src="sounds/openhat.wav"></audio>
+    <audio data-key="83" src="sounds/snare.wav"></audio>
+    <audio data-key="68" src="sounds/clap.wav"></audio>
+    <audio data-key="90" src="sounds/tomH.mp3"></audio>
+    <audio data-key="88" src="sounds/kick.wav"></audio>
+    <audio data-key="67" src="sounds/tom.wav"></audio>
+    
+    <script src="app.js"></script>
 </body>
-
 </html>
