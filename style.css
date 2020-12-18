@@ -99,3 +99,29 @@ button {
   margin: auto;
   display: grid;
 }
+.hilang {
+  animation: menghilang 0.5s;
+}
+
+.datang {
+  animation: muncul 0.5s;
+}
+@keyframes muncul {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menghilang {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}

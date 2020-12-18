@@ -3,9 +3,11 @@ const closeBtn = document.getElementById('close');
 const modal = document.getElementsByClassName('modal__keymap')[0];
 modal.classList.toggle('toggle-modal')
 openBtn.addEventListener('click', () => {
+    modal.classList.toggle('hilang')
     modal.classList.toggle('toggle-modal');
 });
 closeBtn.addEventListener('click', () => {
+    modal.classList.toggle('datang')
     modal.classList.toggle('toggle-modal');
 });
 
